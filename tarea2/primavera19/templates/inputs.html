@@ -1,0 +1,80 @@
+
+{% extends 'navbar.html' %}
+
+{% block title %}
+Servicios
+{% endblock title %}
+
+{% block content %}
+
+<div id="descripcion" class="container">
+    <h1>Servicios</h1>
+
+    <form action="#" autocomplete="off">
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre de Empresa</label>
+      <input type="text" class="form-control" id="exampleText" placeholder="Ingrese texto" name="inputText">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea">Detalle de carga</label>
+      <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+    </div>
+
+     <div class="form-group">
+      <label for="exampleNumber">Ingrese su número de contacto</label>
+      <input type="number" class="form-control" id="exampleNumber" placeholder="Ingrese numero" name="inputNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleNumber">Ingrese fecha tentativa</label>
+      <input type="date" class="form-control" id="exampleDate" placeholder="Ingrese Fecha" name="inputDate">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Ingrese email de contacto</label>
+      <input type="email" class="form-control" id="exampleEmail" placeholder="Ingrese email" name="inputEmail">
+    </div>
+
+    
+    Tipo de camión
+    <div class="form-group">
+
+    <div class="form-check form-check-inline" >
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="inputCheck1">
+      <label class="form-check-label" for="exampleCheck1">Plano</label>
+    </div>
+
+
+    <div class="form-check form-check-inline" >
+      <input type="checkbox" class="form-check-input" id="exampleCheck2" name="inputCheck2">
+      <label class="form-check-label" for="exampleCheck2">Frigorífico</label>
+    </div>
+
+    <div class="form-check form-check-inline" >
+      <input type="checkbox" class="form-check-input" id="exampleCheck3" name="inputCheck3">
+      <label class="form-check-label" for="exampleChec3">Con carro</label>
+    </div>
+    </div>
+
+   
+    <div class="form-group">
+      <label for="exampleFile">Type: file</label>
+      <input type="file" class="form-control-file" id="exampleFile">
+    </div>
+
+    
+
+    <br>
+
+
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  
+  </form>
+       
+</div>
+
+{% endblock content %}
