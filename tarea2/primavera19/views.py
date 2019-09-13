@@ -7,11 +7,14 @@ def index(request):
 def inputs(request):
 	return render(request, 'inputs.html')
 
-def formulario1(request):
-	return render(request, 'formulario1.html')
+def inicio(request):
+	return render(request, 'inicio.html')
 
-def formulario2(request):
-	return render(request, 'formulario2.html')
+def creacion(request):
+	return render(request, 'creacion.html')
 
-def formulario3(request):
-	return render(request, 'formulario3.html')		
+def contacto(request):
+	return render(request, 'contacto.html')		
+
+def testimonios(request):
+	return render(request, 'testimonios.html')		
