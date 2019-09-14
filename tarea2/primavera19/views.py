@@ -18,3 +18,16 @@ def contacto(request):
 
 def testimonios(request):
 	return render(request, 'testimonios.html')		
+
+def cuenta(request):
+	#guarda la información de la cuenta creada
+	usuario = request.POST['usuario']
+	correo = request.POST['correo']
+	contraseña = request.POST['contraseña']
+	edad = request.POST['edad']
+	diccionario = {}
+	diccionario["comentario"]=usuario
+	diccionario["comentario2"]= correo
+	diccionario["comentario3"] = contraseña
+	diccionario["comentario4"]=edad
+	return render(request, "exitocreacion.html", diccionario)
