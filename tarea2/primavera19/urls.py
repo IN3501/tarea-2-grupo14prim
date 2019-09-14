@@ -9,4 +9,7 @@ urlpatterns = [
 	path('inicio/', inicio, name='inicio'),
 	path('testimonios/', testimonios, name= 'testimonios'),
 	path('exitocreacion', cuenta, name= 'exitocreacion'),
+	path('exitoinicio', iniciar, name= 'exitoinicio'),
+	path('exitoinputs', consulta, name= 'exitoinputs'),
+	path('exitotestimonio', guardar, name= 'exitotestimonio'),
 ]

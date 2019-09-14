@@ -31,3 +31,12 @@ def cuenta(request):
 	diccionario["comentario3"] = contraseña
 	diccionario["comentario4"]=edad
 	return render(request, "exitocreacion.html", diccionario)
+
+def iniciar(request):
+	return render(request, "exitoinicio.html")
+
+def consulta(request):
+	return render(request, "exitoinputs.html")
+
+def guardar(request):
+	return render(request, "exitotestimonio.html")
