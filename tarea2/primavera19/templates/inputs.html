@@ -2,7 +2,7 @@
 {% extends 'navbar.html' %}
 
 {% block title %}
-Servicios
+Consulta de Servicios
 {% endblock title %}
 
 {% block content %}
@@ -10,15 +10,15 @@ Servicios
 <div id="descripcion" class="container">
     <h1>Servicios</h1>
 
-    <form action="#" autocomplete="off">
+    <form action="/exitoinputs" method="POST" autocomplete="off"> {% csrf_token %}
 
     <div class="form-group">
-      <label for="exampleInputEmail1">Nombre de Empresa</label>
+      <label for="exampleInputEmail1">Nombre de Empresa/Particular interesado</label>
       <input type="text" class="form-control" id="exampleText" placeholder="Ingrese texto" name="inputText">
     </div>
 
     <div class="form-group">
-      <label for="exampleFormControlTextarea">Detalle de carga</label>
+      <label for="exampleFormControlTextarea">Detalle de carga (tipo, peso aproximado, lugar de retiro y lugar de despacho)</label>
       <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
     </div>
 
@@ -60,7 +60,7 @@ Servicios
 
    
     <div class="form-group">
-      <label for="exampleFile">Type: file</label>
+      <label for="exampleFile">Fotografía de la carga (opcional)</label>
       <input type="file" class="form-control-file" id="exampleFile">
     </div>
 
